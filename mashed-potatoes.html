@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttery Mashed Potatoes - CookBooked</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7e3d1;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #ddc4a1;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        .header img.logo {
+            height: 40px;
+        }
+
+        .header .right-buttons {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .right-buttons img {
+            height: 30px;
+            cursor: pointer;
+            margin-left: 15px;
+        }
+
+        .header .right-buttons .my-recipes {
+            margin-left: 10px;
+            font-size: 16px;
+            color: #333;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .header .right-buttons .my-recipes:hover {
+            text-decoration: underline;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .recipe-image {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .ingredients, .steps {
+            background-color: #f8e5c7;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+
+        .ingredients ul, .steps ol {
+            text-align: left;
+            padding-left: 20px;
+        }
+
+        .comment-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .comment-section input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .back-button img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="CookBooked Logo" class="logo">
+        <div class="right-buttons">
+            <a href="myrecipes.html" class="my-recipes">My Recipes</a>
+            <a href="homepage.html">
+                <img src="home-icon.png" alt="Home Icon">
+            </a>
+            <a href="profile.html">
+                <img src="user-icon.png" alt="User Icon">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Buttery Mashed Potatoes</h2>
+        <img src="mashed-potatoes.jpg" alt="Buttery Mashed Potatoes" class="recipe-image">
+
+        <div class="ingredients">
+            <h3>INGREDIENTS</h3>
+            <ul>
+                <li>Potatoes</li>
+                <li>Butter</li>
+                <li>Salt</li>
+                <li>Milk or cream</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h3>STEPS</h3>
+            <ol>
+                <li>Cut potato into equal pieces.</li>
+                <li>Boil in salted water until soft.</li>
+                <li>Drain and mash with butter and milk or cream.</li>
+                <li>Mash until creamy and fluffy.</li>
+                <li>Transfer to a serving bowl and enjoy.</li>
+            </ol>
+        </div>
+
+        <div class="comment-section">
+            <input type="text" placeholder="Add a personal comment to the creator...">
+            <a href="homepage.html" class="back-button"><img src="back-arrow.png" alt="Back"></a>
+        </div>
+    </div>
+</body>
+</html>
