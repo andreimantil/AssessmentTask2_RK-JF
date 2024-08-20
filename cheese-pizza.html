@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheese Pizza - CookBooked</title>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" class="logo">
+        <div class="right-buttons">
+            <a href="myrecipes.html" class="my-recipes">My Recipes</a>
+            <a href="homepage.html">
+                <img src="home-icon.png">
+            </a>
+            <a href="profile.html">
+                <img src="user-icon.png">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Cheese Pizza</h2>
+        <img src="cheese-pizza.jpg" class="recipe-image">
+
+        <div class="ingredients-steps-container">
+            <div class="ingredients">
+                <h3>INGREDIENTS</h3>
+                <ul>
+                    <li>1 prepared pizza dough</li>
+                    <li>½ cup pizza sauce</li>
+                    <li>1 cup shredded mozzarella cheese</li>
+                    <li>¼ cup grated parmesan cheese</li>
+                </ul>
+            </div>
+
+            <div class="steps">
+                <h3>STEPS</h3>
+                <ol>
+                    <li>Position an oven rack in the lower third and preheat the oven to 450°F.</li>
+                    <li>On a lightly floured surface, stretch the dough into a 12-inch circle. Transfer to a non-stick baking sheet.</li>
+                    <li>Spread the pizza sauce onto the dough, leaving a 1-inch border around the edge. Sprinkle with cheeses.</li>
+                    <li>Bake for 12 to 14 minutes, or until the crust is browned and the cheese is bubbling and beginning to brown. Let cool for a few minutes before cutting.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="comment-section">
+            <a href="comments2.html" class="view-comments-button">View Comments</a>
+            <a href="myrecipes.html" class="back-button"><img src="back-arrow.png"></a>
+        </div>
+
+        <div id="comment-status" class="comment-status"></div>
+    </div>
+    
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7e3d1;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ddc4a1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img.logo {
+    height: 40px;
+}
+
+.header .right-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header .right-buttons img {
+    height: 30px;
+    margin-left: 15px;
+}
+
+.header .right-buttons .my-recipes {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.ingredients, .steps {
+    background-color: #f8e5c7;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.ingredients ul, .steps ol {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.view-comments-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.back-button img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+</style>
+
+

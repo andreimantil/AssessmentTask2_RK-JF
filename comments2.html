@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments - CookBooked</title>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" class="logo">
+        <div class="right-buttons">
+            <a href="myrecipes.html" class="my-recipes">My Recipes</a>
+            <a href="homepage.html">
+                <img src="home-icon.png">
+            </a>
+            <a href="profile.html">
+                <img src="user-icon.png">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <div class="comment-card">
+            <p><strong>Katie Wilson</strong> - 1 month ago</p>
+            <p>Meh recipe. Good, but could be better.</p>
+        </div>
+
+        <a href="cheese-pizza.html" class="back-button"><img src="back-arrow.png"></a>
+    </div>
+    
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7e3d1;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+        background-color: #ddc4a1;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .header img.logo {
+        height: 40px;
+    }
+    
+    .header .right-buttons {
+        display: flex;
+        align-items: center;
+    }
+    
+    .header .right-buttons img {
+        height: 30px;
+        margin-left: 15px;
+    }
+    
+    .header .right-buttons .my-recipes {
+        margin-left: 10px;
+        font-size: 16px;
+        color: #333;
+        text-decoration: none;
+    }
+
+.content {
+    padding: 20px;
+}
+
+.comment-card {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment-card p {
+    margin: 5px 0;
+}
+
+.back-button img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+</style>
