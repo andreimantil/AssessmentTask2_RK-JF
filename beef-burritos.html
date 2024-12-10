@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beef Burritos - CookBooked</title>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" class="logo">
+        <div class="right-buttons">
+            <a href="myrecipes.html" class="my-recipes">My Recipes</a>
+            <a href="homepage.html">
+                <img src="home-icon.png">
+            </a>
+            <a href="profile.html">
+                <img src="user-icon.png">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2>Beef Burritos</h2>
+        <img src="beef-burritos.jpg" class="recipe-image">
+
+        <div class="ingredients">
+            <h3>INGREDIENTS</h3>
+            <ul>
+                <li>Beef Burrito Filling</li>
+                <li>Any type of rice</li>
+                <li>Corn</li>
+                <li>Black Beans</li>
+                <li>Cabbage or lettuce</li>
+                <li>Diced Tomato</li>
+                <li>Red Onion</li>
+                <li>Cheese</li>
+                <li>Coriander/cilantro</li>
+            </ul>
+        </div>
+
+        <div class="steps">
+            <h3>STEPS</h3>
+            <ol>
+                <li>Heat oil in a skillet over high heat. Add garlic, onion, and beef. Cook until beef browns.</li>
+                <li>Add taco seasoning, tomato paste, and water. Cook until water evaporates but beef remains juicy. Let it cool for 10 minutes.</li>
+                <li>Place a tortilla on a work surface. Add rice, beef, lettuce, corn, black beans, tomato, red onion, coriander, and cheese.</li>
+                <li>Fold the bottom of the tortilla over the filling. Fold the sides in tightly and roll up. Wrap in foil.</li>
+                <li>To heat, pan fry in a dry pan or bake in foil at 180C/350F for 20  minutes. If refrigerated, it may take 30 minutes to warm through.</li>
+                <li>Serve with sour cream, chilli sauce, salsa, or guacamole.</li>
+            </ol>
+        </div>
+
+        <div class="comment-section">
+            <input type="text" id="comment-input" placeholder="Add a personal comment to the creator...">
+            <button onclick="sendComment()" class="send-button">Send</button>
+            <a href="homepage.html" class="back-button"><img src="back-arrow.png"></a>
+        </div>
+
+        <div id="comment-status" class="comment-status">
+    </div>
+</body>
+</html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7e3d1;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #ddc4a1;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img.logo {
+    height: 40px;
+}
+
+.header .right-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header .right-buttons img {
+    height: 30px;
+    margin-left: 15px;
+}
+
+.header .right-buttons .my-recipes {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.recipe-image {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.ingredients, .steps {
+    background-color: #f8e5c7;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.ingredients ul, .steps ol {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.comment-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.comment-section input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.send-button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.back-button img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.comment-status {
+    margin-top: 10px;
+    font-size: 16px;
+}
+</style>
+
+<script>
+    function sendComment() {
+        const input = document.getElementById('comment-input');
+        const status = document.getElementById('comment-status');
+        
+        status.innerText = input.value.trim() ? "Comment Sent!" : "Please enter a comment before sending.";
+
+        if (input.value.trim()) input.value = "";
+    }
+</script>

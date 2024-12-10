@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CookBooked - Home</title>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" class="logo">
+        <div class="right-buttons">
+            <a href="myrecipes.html" class="my-recipes">My Recipes</a>
+            <a href="homepage.html">
+                <img src="home-icon.png">
+            </a>
+            <a href="profile.html">
+                <img src="user-icon.png">
+            </a>
+        </div>
+    </div>
+
+    <div class="content">
+        <h2 id="greeting">For you, User</h2>
+        <div class="search-bar">
+            <input id="searchInput" type="text" placeholder="Search for...">
+            <button id="searchButton" onclick="handleSearch()">Search</button>
+        </div>
+        <div class="recipe-card">
+            <a href="mashed-potatoes.html">
+                <img src="mashed-potatoes.jpg">
+            </a>
+            <div class="recipe-info">
+                <h3>Buttery Mashed Potatoes</h3>
+                <p>By Jonathan Salami</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <a href="beef-burritos.html">
+                <img src="beef-burritos.jpg">
+            </a>
+            <div class="recipe-info">
+                <h3>Beef Burritos</h3>
+                <p>By Aamir Alvi</p>
+            </div>
+        </div>
+        <div class="recipe-card">
+            <a href="apple-smoothie.html">
+                <img src="apple-smoothie.jpg">
+            </a>
+            <div class="recipe-info">
+                <h3>Apple Smoothie</h3>
+                <p>By Kylie Thompson</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f7e3d1;
+        margin: 0;
+        padding: 0;
+    }
+
+    .header {
+        background-color: #ddc4a1;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .header img.logo {
+        height: 40px;
+    }
+
+    .header .right-buttons {
+        display: flex;
+        align-items: center;
+    }
+
+    .header .right-buttons img {
+        height: 30px;
+        cursor: pointer;
+        margin-left: 15px;
+    }
+
+    .header .right-buttons .my-recipes {
+        margin-left: 10px;
+        font-size: 16px;
+        color: #333;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    h2 {
+        color: #444;
+    }
+
+    .search-bar {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .search-bar input {
+        width: 80%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .search-bar button {
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #ddc4a1;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+
+    .recipe-card {
+        display: flex;
+        margin-bottom: 20px;
+        background-color: #f8e5c7;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        overflow: hidden;
+    }
+
+    .recipe-card img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        cursor: pointer;
+    }
+
+    .recipe-info {
+        padding: 15px;
+        flex-grow: 1;
+    }
+
+    .recipe-info h3 {
+        margin: 0 0 10px 0;
+        color: #333;
+    }
+
+    .recipe-info p {
+        margin: 0;
+        color: #666;
+    }
+</style>
+
+<script>
+    function handleSearch() {
+        const searchInput = document.getElementById('searchInput').value.trim().toLowerCase();
+        if (searchInput === 'scrambled eggs') {
+            window.location.href = 'searchresults.html';
+        }
+    }
+</script>
